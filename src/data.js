@@ -55,13 +55,14 @@ const langaraEngY1 = {
       ],
     },
     {
-      name: "Summer — Application Window",
-      tag: "Apply & Prepare",
+      name: "Summer — Application & Bridge Courses",
+      tag: "Comp Studies + Apply",
       tagColor: "#d4a86a",
-      load: "Break",
+      load: "Moderate",
       courses: [
-        { code: "—", name: "UBC / BCIT applications submitted by deadline", credits: 0, type: "break", diff: 0, note: "UBC Engineering Transfer: apply by Jan 15. Final April grades drive the decision." },
-        { code: "OPT", name: "Optional review of calculus and physics", credits: 0, type: "break", diff: 0 },
+        { code: "Comp Studies", name: "Complementary Studies Elective (Langara summer)", credits: 3, type: "comm", diff: 1, note: "Langara summer offers arts / social-sci electives that articulate to UBC complementary studies — take now to free a future term." },
+        { code: "Sci Elective", name: "Science Breadth Elective", credits: 3, type: "science", diff: 2, note: "BIOL or other science breadth often runs in summer. Reduces UBC Year 3 elective load." },
+        { code: "—", name: "UBC / BCIT applications confirmed", credits: 0, type: "break", diff: 0, note: "UBC Engineering Transfer: applied by Jan 15. Spring grades drive the final decision." },
       ],
     },
   ],
@@ -104,12 +105,13 @@ const langaraCsY1 = {
       ],
     },
     {
-      name: "Summer",
-      tag: "Optional Acceleration",
-      tagColor: "#7bc485",
-      load: "Break",
+      name: "Summer — Langara Acceleration",
+      tag: "Get Ahead",
+      tagColor: "#5fb8b8",
+      load: "Moderate",
       courses: [
-        { code: "OPT", name: "Optional summer course (CPSC 2150 or breadth)", credits: 0, type: "break", diff: 0, note: "Langara offers some summer CS courses — useful for accelerating to UBC Y3 entry." },
+        { code: "CPSC 2150", name: "Computer Architecture (early)", credits: 3, type: "cs", diff: 3, note: "Often runs in summer at Langara. Taking now lightens Year 2 Fall." },
+        { code: "Arts Elective", name: "Arts / breadth elective", credits: 3, type: "comm", diff: 1, note: "UBC Faculty of Science requires breadth — take in summer to free future terms." },
       ],
     },
   ],
@@ -150,12 +152,14 @@ const langaraCsY2 = {
       ],
     },
     {
-      name: "Summer — UBC Apply",
-      tag: "Transfer Window",
+      name: "Summer — Transfer Bridge",
+      tag: "Apply + Bridge Courses",
       tagColor: "#d4a86a",
-      load: "Break",
+      load: "Moderate",
       courses: [
         { code: "—", name: "Apply to UBC Faculty of Science", credits: 0, type: "break", diff: 0, note: "Submit by deadline. CS specialization decided after Year 3 winter at UBC — strong grades matter." },
+        { code: "STAT 1181", name: "Statistics (if not taken in Y2 Spring)", credits: 3, type: "math", diff: 2, note: "Articulates to UBC stats requirement — take now to lighten Y3." },
+        { code: "Open Elective", name: "Open transferable elective", credits: 3, type: "comm", diff: 1 },
       ],
     },
   ],
@@ -194,10 +198,12 @@ const ubcEeYears = [
         ],
       },
       {
-        name: "Summer — Program Placement", tag: "Decision Point", tagColor: "#d4a86a", load: "Break",
+        name: "Summer — UBC Summer Term", tag: "Lighten Year 3", tagColor: "#d4a86a", load: "Moderate",
         courses: [
           { code: "—", name: "Program Placement results released", credits: 0, type: "break", diff: 0, note: "EE seat confirmed based on winter GPA + statement." },
-          { code: "OPT", name: "Optional UBC Engineering Co-op (paid)", credits: 0, type: "work", diff: 0 },
+          { code: "MATH 302", name: "Introduction to Probability (early)", credits: 3, type: "math", diff: 3, note: "Often offered in summer — taking now removes one Y3 Fall course." },
+          { code: "Comp Studies", name: "Complementary Studies Elective", credits: 3, type: "comm", diff: 2, note: "Frees a Y3 Fall slot." },
+          { code: "OPT", name: "Optional UBC Engineering Co-op (alternative)", credits: 0, type: "work", diff: 0 },
         ],
       },
     ],
@@ -231,9 +237,11 @@ const ubcEeYears = [
         ],
       },
       {
-        name: "Summer — Co-op Window", tag: "Co-op or Recovery", tagColor: "#7bc485", load: "Break",
+        name: "Summer — UBC Summer Term", tag: "Lighten Year 4", tagColor: "#d4a86a", load: "Moderate",
         courses: [
-          { code: "OPT", name: "Optional 4-month Co-op placement", credits: 0, type: "work", diff: 0 },
+          { code: "Tech Elective", name: "Technical Elective (early)", credits: 3, type: "elec", diff: 3, note: "One of the five Y4 tech electives — take in summer to ease final year." },
+          { code: "Sci Elective", name: "Science Elective", credits: 3, type: "science", diff: 2, note: "Removes a Y4 course." },
+          { code: "OPT", name: "Optional 4-month Co-op (alternative)", credits: 0, type: "work", diff: 0 },
         ],
       },
     ],
@@ -307,10 +315,12 @@ const ubcCpenYears = [
         ],
       },
       {
-        name: "Summer — Program Placement", tag: "Decision Point", tagColor: "#d4a86a", load: "Break",
+        name: "Summer — UBC Summer Term", tag: "Lighten Year 3", tagColor: "#d4a86a", load: "Moderate",
         courses: [
           { code: "—", name: "Program Placement results released", credits: 0, type: "break", diff: 0 },
-          { code: "OPT", name: "Optional UBC Engineering Co-op (paid)", credits: 0, type: "work", diff: 0 },
+          { code: "MATH 302", name: "Introduction to Probability (early)", credits: 3, type: "math", diff: 3, note: "Take in summer to remove one Y3 Fall course." },
+          { code: "Comp Studies", name: "Complementary Studies Elective", credits: 3, type: "comm", diff: 2 },
+          { code: "OPT", name: "Optional UBC Engineering Co-op (alternative)", credits: 0, type: "work", diff: 0 },
         ],
       },
     ],
@@ -344,9 +354,11 @@ const ubcCpenYears = [
         ],
       },
       {
-        name: "Summer — Co-op Window", tag: "Co-op or Recovery", tagColor: "#7bc485", load: "Break",
+        name: "Summer — UBC Summer Term", tag: "Lighten Year 4", tagColor: "#d4a86a", load: "Moderate",
         courses: [
-          { code: "OPT", name: "Optional 4-month Co-op placement", credits: 0, type: "work", diff: 0 },
+          { code: "Tech Elective", name: "CPEN Technical Elective (early)", credits: 3, type: "digital", diff: 3, note: "One of the Y4 tech electives — take in summer to ease final year." },
+          { code: "Sci Elective", name: "Science Elective", credits: 3, type: "science", diff: 2 },
+          { code: "OPT", name: "Optional 4-month Co-op (alternative)", credits: 0, type: "work", diff: 0 },
         ],
       },
     ],
@@ -422,9 +434,11 @@ const ubcCsYears = [
         ],
       },
       {
-        name: "Summer — CS Placement", tag: "Specialization Decided", tagColor: "#d4a86a", load: "Break",
+        name: "Summer — UBC Summer Term", tag: "Placement + Lighten Year 4", tagColor: "#d4a86a", load: "Moderate",
         courses: [
           { code: "—", name: "CS Major / Honours admission decision", credits: 0, type: "break", diff: 0, note: "Notification email late May / early June. Competitive — strong CPSC 210/221/213 grades matter." },
+          { code: "CPSC 3xx", name: "CPSC 300-level Elective (early)", credits: 3, type: "cs", diff: 3, note: "Take in summer to free up a Y4 slot." },
+          { code: "Arts Elective", name: "Arts / breadth Elective", credits: 3, type: "comm", diff: 1 },
         ],
       },
     ],
@@ -511,9 +525,11 @@ const bcitEeYears = [
         ],
       },
       {
-        name: "Summer — BEng Application", tag: "Compete for L3 Seat", tagColor: "#d4a86a", load: "Break",
+        name: "Summer — BEng Decision + Bridge", tag: "Apply + Continuing Ed", tagColor: "#d4a86a", load: "Moderate",
         courses: [
           { code: "—", name: "BEng Level 3 admission decided", credits: 0, type: "break", diff: 0, note: "Recent admit averages > 85%. Highly competitive." },
+          { code: "LIBS 7001", name: "Critical Reading & Writing (Continuing Ed, early)", credits: 3, type: "comm", diff: 1, note: "BCIT Continuing Studies sometimes runs LIBS 7001 in summer — taking it now removes one Level 5 course." },
+          { code: "OPT", name: "Optional summer review of math / circuits", credits: 0, type: "break", diff: 0 },
         ],
       },
     ],
@@ -559,9 +575,11 @@ const bcitEeYears = [
         ],
       },
       {
-        name: "Summer", tag: "Break / Co-op", tagColor: "#7bc485", load: "Break",
+        name: "Summer — Continuing Ed + Co-op", tag: "Lighten Level 5", tagColor: "#7bc485", load: "Moderate",
         courses: [
-          { code: "—", name: "Summer break (or work term continues)", credits: 0, type: "break", diff: 0 },
+          { code: "OPT", name: "Industry co-op or summer work", credits: 0, type: "work", diff: 0 },
+          { code: "OPMT 7000", name: "Time Value of Money (Continuing Ed, early)", credits: 0.5, type: "comm", diff: 1, note: "If offered through Continuing Studies, take in summer to clear from Level 5." },
+          { code: "Gen Ed", name: "General Education Elective (online / continuing ed)", credits: 3, type: "comm", diff: 1, note: "Some LIBS / general-ed run online year-round — take to lighten Level 5/6." },
         ],
       },
     ],
@@ -680,9 +698,11 @@ const bcitCompYears = [
         ],
       },
       {
-        name: "Summer", tag: "Break / Co-op", tagColor: "#7bc485", load: "Break",
+        name: "Summer — Continuing Studies", tag: "Co-op + Bridge", tagColor: "#7bc485", load: "Moderate",
         courses: [
-          { code: "OPT", name: "Optional industry co-op or break", credits: 0, type: "break", diff: 0 },
+          { code: "OPT", name: "Optional industry co-op", credits: 0, type: "work", diff: 0 },
+          { code: "LIBS Elective", name: "BCIT LIBS Elective (Continuing Ed)", credits: 4, type: "comm", diff: 1, note: "Take a LIBS elective via continuing studies to bank credit toward the BTech gen-ed requirements." },
+          { code: "OPT", name: "Optional advanced web course (CS-adjacent)", credits: 3, type: "cs", diff: 2 },
         ],
       },
     ],
@@ -718,9 +738,11 @@ const bcitCompYears = [
         ],
       },
       {
-        name: "Summer — BTech Application", tag: "Apply for BTech", tagColor: "#d4a86a", load: "Break",
+        name: "Summer — BTech Apply + Bridge", tag: "Apply + Gen Ed", tagColor: "#d4a86a", load: "Moderate",
         courses: [
           { code: "—", name: "Apply for CST BTech laddering", credits: 0, type: "break", diff: 0, note: "BTech requires CST graduation + competitive GPA. Email cstbtech@bcit.ca." },
+          { code: "Gen Ed", name: "General Education Elective (early)", credits: 3, type: "comm", diff: 1, note: "Get one of the BTech gen-ed requirements done before BTech Year 1 begins." },
+          { code: "LIBS Elective", name: "BCIT LIBS Elective (Continuing Ed)", credits: 3, type: "comm", diff: 1 },
         ],
       },
     ],
@@ -752,9 +774,11 @@ const bcitCompYears = [
         ],
       },
       {
-        name: "Summer", tag: "Break / Co-op", tagColor: "#7bc485", load: "Break",
+        name: "Summer — Continuing Ed + Co-op", tag: "Lighten Senior Year", tagColor: "#7bc485", load: "Moderate",
         courses: [
-          { code: "OPT", name: "Optional summer co-op or break", credits: 0, type: "break", diff: 0 },
+          { code: "OPT", name: "Optional summer co-op", credits: 0, type: "work", diff: 0 },
+          { code: "Gen Ed", name: "General Education Elective", credits: 3, type: "comm", diff: 1, note: "Lighten BTech Year 2." },
+          { code: "Tech Elective", name: "Technical Elective (Continuing Ed)", credits: 4, type: "cs", diff: 3, note: "Banks credit toward BTech graduation." },
         ],
       },
     ],
